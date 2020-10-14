@@ -17,8 +17,8 @@ package com.projetointegrador.Ecommerce.controller;
 	import org.springframework.web.bind.annotation.RequestMapping;
 	import org.springframework.web.bind.annotation.RestController;
 
-import com.projetointegrador.Ecommerce.model.Categoria;
-import com.projetointegrador.Ecommerce.repository.CategoriaRepository;
+	import com.projetointegrador.Ecommerce.model.Categoria;
+	import com.projetointegrador.Ecommerce.repository.CategoriaRepository;
 
 	
 
