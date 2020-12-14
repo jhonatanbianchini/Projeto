@@ -1,0 +1,98 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div class="bg-categoria">
+    <div class="container register mt-0">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="https://i.imgur.com/tNxiFvP.png" alt="" />
+                <h3>Bem-Vinde</h3>
+                <p>Cadastre um novo curso e uma nova categoria</p>
+                <input class="bg-warning" type="submit" name="" value="Manutenção" routerLink="/manutencao" /><br />
+            </div>
+            <div class="col-md-9 register-right">
+                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">Curso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            aria-controls="profile" aria-selected="false">Categoria</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Cadastre um curso</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nome do curso" value=""
+                                        [(ngModel)]='produto.nome'>
+                                </div>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="Tempo de duração (em horas)"
+                                        value="" [(ngModel)]='produto.duracao'>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nome do instrutor" value=""
+                                        [(ngModel)]='produto.professor'>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Descrição do curso"
+                                        value="" [(ngModel)]='produto.descricao'>
+                                </div>
+                                <div class="form-group">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="number" class="form-control" placeholder="Preço (R$)" value=""
+                                        [(ngModel)]='produto.preco'>
+                                </div>
+
+                                <div class="form-group">
+
+                                    <select class="form-control" name="Produto" required="" [(ngModel)]='nivel'
+                                        (change)="escolhaNivel($event)">
+                                        <option class="hidden" selected disabled>Nivel</option>
+                                        <option value="Iniciante">Iniciante</option>
+                                        <option value="Intermediário">Intermediário</option>
+                                        <option value="Avançado">Avançado</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" name="categoria" id="categoria" class="form-control"
+                                        [(ngModel)]='IdCategoria' (change)='findByIdCategoria()'>
+                                        <option class="hidden" selected disabled>Categoria</option>
+                                        <option *ngFor='let item of listaCategorias' value={{item.id}}>
+                                            {{item.titulo}}
+                                        </option>
+                                    </select>
+                                </div>
+                                <button type="button" class="btnRegister" value="Concluir" (click)="publicar()">
+                                 Cadastrar   </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <h3 class="register-heading">Cadastre uma categoria</h3>
+                        <div class="row register-form">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nome da categoria" value="" [(ngModel)]='categoria.titulo'>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="button" class="btnRegister" value="Concluir"(click)='cadastrar()'>
+                                    Cadastrar   </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,58 @@
+  <!--PAgina de cadastro-->
+<div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-md-12">
+            <h1 class="text-center">Cadastrar</h1>
+        </div>
+
+    </div>
+    <div class="row mb-5 d-flex justify-content-center">
+        <div class="col-md-8">
+            <div>
+<!--Opção para cadastrar nome-->
+                <div class="form-group">
+                    <label for='nome'>Nome</label>
+                    <input type="text" class='form-control' id="nome" placeholder="Digite seu nome aqui"
+                        [(ngModel)]='user.nome'>
+
+                </div>
+                <!--Opção para cadastrar nome-->
+                <!--Opção para cadastrar usuario-->
+                <div class="form-group">
+                    <label for='usuario'>Usuario</label>
+                    <input type="text" class='form-control' id="usuario" placeholder="Apelido"
+                        [(ngModel)]='user.usuario'>
+
+                </div>
+                <!--Opção para cadastrar usuario-->
+                <!--Opção para cadastrar email-->
+                <div class="form-group">
+                    <label for='usuario'>Email</label>
+                    <input type="email" class='form-control' id="email" placeholder="exemplo@email.com"
+                        [(ngModel)]='user.email'>
+
+                </div>
+                <!--Opção para cadastrar email-->
+                <!--opção para cadastrar senha-->
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" id="senha" placeholder="Digite sua senha"
+                        (input)='conferirSenha($event)' value='{{senha}}' >
+                </div>
+<!--opção para cadastrar senha-->
+<!--opção para confirmar senha-->
+                <div class="form-group">
+                    <label for="senhaConf">Confirmar Senha</label>
+                    <input type="password" class="form-control" id="senhaConf"
+                        placeholder="Digite a confirmação de senha" [(ngModel)]='user.senha'>
+                </div>
+                <!--opção para confirmar senha-->
+<!--botão cadastrar-->
+                <div class="dflex justify-content-center">
+                    <button class="btn btn-outline-sucess w-25" (click)='cadastrar()'>Cadastrar</button>
+                </div>
+                <!--botão cadastrar-->
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+<div class="corFundo">
+  <div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
+
+  <div class="login-box margens">
+    <h2>Cadastro</h2>
+    <form>
+      <div class="user-box">
+        <div class="direita" id="txtNome"></div>
+        <input type="text" name="user" required="" id="nome" [(ngModel)]='user.nome' (keyup)='validaNome()'>
+        <label>Nome</label>
+      </div>
+
+      <div class="user-box">
+        <div class="direita" id="txtUsuario"></div>
+        <input type="text" name="User" required="" id="usuario" [(ngModel)]='user.usuario' (keyup)='validaUsuario()'>
+        <label>Usuário</label>
+      </div>
+
+      <div class="user-box">
+        <div class="direita" id="txtEmail"></div>
+        <input type="text" name="User" required="" id="email" [(ngModel)]='user.email' (keyup)='validaEmail()'>
+        <label>E-mail</label>
+      </div>
+
+
+      <div class="user-box">
+        <div class="direita" id="txtSenha"></div>
+        <input type="password" name="User" required="" id="senha" (input)='conferirSenha($event)' value='{{senha}}'
+          (keyup)='validaSenha()'>
+
+        <label>Senha</label>
+
+      </div>
+
+      <div class="user-box">
+        <input type="password" name="User" required="" id="senhaConf" [(ngModel)]='user.senha'>
+        <label>Confirme a Senha</label>
+        <div id="txtSenhaConf"></div>
+      </div>
+
+      <br>
+      <p class="corTipo">Tipo de Usuário</p>
+      <div class="user-box">
+        <label>Tipo de Usuário</label>
+        <select class='form-control corLetra' name="User" required="" [(ngModel)]='tipo' (change)="escolhaTipo($event)">
+          <option value="" style="display:none"></option>
+          <option value="aluno" class="corLetra">Aluno</option>
+          <option value="professor" class="corLetra"> Professor</option>
+        </select>
+      </div>
+
+
+      <a (click)='cadastrar()'>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Cadastrar
+      </a>
+    </form>
+  </div>
+</div>

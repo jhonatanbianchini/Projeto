@@ -1,0 +1,32 @@
+.colorAzul
+{
+    background-color:#7F48F5;
+}
+
+.colorRoxo
+{
+    background-color: violet;
+}
+
+.fonteJB
+{
+    font-family: 'Anton', sans-serif;
+}
+
+.fonteContatos
+{
+    font-family: 'Crete Round', serif;
+}
+
+#assunto {
+    resize: none;
+  }
+
+  .w3-animate-top 
+  {  
+         position: relative;     animation: animatetop 2.4s 
+} 
+@keyframes animatetop {     from {         top: -300px;         opacity: 0     } 
+                         to {         top: 0;         opacity: 1     } }
+
+                         

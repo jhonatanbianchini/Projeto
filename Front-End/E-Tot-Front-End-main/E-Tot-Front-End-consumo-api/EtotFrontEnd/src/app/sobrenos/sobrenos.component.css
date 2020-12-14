@@ -1,0 +1,60 @@
+.border {
+    border-radius: 75;
+}
+.lado {
+    float: left;
+}
+.cor2{
+    background-color:  #111111;
+}
+
+.cor {
+color: darkviolet;
+    
+    
+}
+.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 23em;
+}
+
+.fonteRoxa {
+    color:#0000ff;
+    text-align: Courier New;
+    text-shadow: 0.1em 0.1em 0.15em #380236;
+}
+.fontAzul {
+    color:#0000ff;
+    ;
+}
+
+.jumboC{
+   background-color:black;
+}
+.jumbo {
+    text-shadow: -1px 0 rgb(16, 12, 238), 0 1px rgb(7, 40, 228),
+      1px 0 rgb(187, 13, 240), 0 -1px rgb(182, 10, 197);
+      
+      
+}
+.cardL{
+    background-color: grey;
+}
+
+/* Esse código é só para tirar as margens */
+body,html{margin:0;padding:0;}
+
+.parallax {
+  /* Coloque a imagem a ser usada como background */
+  background-image: url('https://lidianefranqui.com.br/wp-content/uploads/2019/08/Book-of-Thoth.jpg');
+   
+  /* Defina uma altura para a visão que o usuário terá da imagem */
+  min-height: 500px;
+   
+  /* defina o background como fixo e posicione a imagem */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }

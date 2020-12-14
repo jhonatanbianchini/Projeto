@@ -1,0 +1,15 @@
+.border {
+    border-radius: 75;
+}
+.lado {
+    float: left;
+}
+
+.cor {
+    background-color: blueviolet;
+}
+.blocktext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 23em
+}

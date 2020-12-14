@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+.tm-in {
+  margin-left: -70px;
+}
+.bg-nav {
+  background: linear-gradient(#141e30, #243b55)
+}
+.fonteE{
+  font-family: 'Redressed', cursive;
+  color: white;
+}
+body {
+  height: 2000px;
+}
+.navbar .navbar-brand {
+  font-size: 30px;
+}
+.navbar .nav-item {
+  padding: 10px 20px;
+}
+.navbar .nav-link {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.fa-bars {
+  color: white;
+  font-size: 30px;
+}
+
+ul{
+	display: flex;
+
+	margin: auto;
+
+	justify-content: space-between;
+    text-align: center;
+    text-decoration-color: white;
+}
+li {
+	padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: white;
+	min-width: 80px;
+    margin: auto;
+    text-decoration-color: white;
+}
+
+li:hover {
+  background-image: ('assets/img/button-removebg-preview.png');
+  background-size: 100% 100%;
+  color: white;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 white;
+    font-weight: bold;
+    text-decoration-color: white;
+}
+li:active {
+  transform: translateY(4px);
+}
+
+@keyframes spring {
+  15% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.2, 1.1);
+  }
+  40% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(0.95, 0.95);
+  }
+  75% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1.05, 1);
+  }
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: scale(1, 1);
+  }
+}
+.navcolor2{
+  color: white;
+}
+.navcolor1{
+  color: rgb(255, 217, 0);
+}
+.navcolor3{
+  color: rgb(255, 0, 0);
+}

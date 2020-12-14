@@ -1,0 +1,63 @@
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #ffffff;">
+    <!--cor branca por conta do logo / verificar se poderemos mudar-->
+    
+    
+    <a class="navbar-brand" href="#">
+        <img src="./assets/img/logo.png" width="60" height="60" alt="">
+        Principal</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!--Opções do NavBar-->
+    <div class="container">
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cursos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Tecnologia</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Profissinalizantes</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Desenvolvimento Pessoal</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/login">Login</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/cadastro">Cadastre-se</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/sobrenos">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/faleconosco">Fale Conosco</a>
+                </li>
+
+
+            </ul>
+        <!--Opções do NavBar-->
+
+        
+            <!--Pesquisa-->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="O que precisa?" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+
+            <!--Pesquisa-->
+        </div>
+
+    </div>
+
+</nav>

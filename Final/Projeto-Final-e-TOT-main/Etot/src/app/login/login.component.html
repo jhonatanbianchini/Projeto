@@ -1,0 +1,26 @@
+<div class="corFundo">
+    <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <div class="login-box margens">
+        <h2>Login</h2>
+        <form>
+            <div class="user-box">
+                <input type="text" name="Userlogin" required="" [(ngModel)]='userLogin.usuario'>
+                <label>Usuário</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="Userlogin" required="" [(ngModel)]='userLogin.senha'>
+                <label>Senha</label>
+            </div>
+            <a (click)='entrar()'>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Login
+            </a>
+        </form>
+    </div>
+</div>

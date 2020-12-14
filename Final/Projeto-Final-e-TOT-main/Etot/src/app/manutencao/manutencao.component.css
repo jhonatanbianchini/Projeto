@@ -1,0 +1,56 @@
+.bg-manutencao {
+    background: linear-gradient(#141e30, #243b55);
+}
+
+.trash {
+    color: rgb(209, 91, 71);
+}
+
+.panel-body {
+    padding: 0px;
+}
+
+.panel .glyphicon,
+.list-group-item .glyphicon {
+    margin-right: 5px;
+}
+
+.p-m {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    margin-left: 225px;
+}
+
+.panel-body .radio,
+.checkbox {
+    display: inline-block;
+    margin: 0px;
+}
+
+.panel-body input[type=checkbox]:checked+label {
+    text-decoration: line-through;
+    color: rgb(128, 144, 160);
+}
+
+.list-group-item:hover,
+a.list-group-item:focus {
+    text-decoration: none;
+    background-color: rgb(245, 245, 245);
+    font-size: 20px;
+}
+
+.list-group {
+    margin-bottom: 0px;
+}
+
+.panel-primary {
+    width: 1000px;
+    height: 500px;
+    margin-left: 100px;
+    background: linear-gradient(#141e30, #243b55);
+}
+
+.panel-heading {
+    background: linear-gradient(#141e30, #243b55);
+}

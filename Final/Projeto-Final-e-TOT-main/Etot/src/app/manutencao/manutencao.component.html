@@ -1,0 +1,68 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<div class="bg-manutencao">
+    <br>
+    <div class="container mt-5">
+        <div class="row">
+            <br><br><br>
+            <p class="p-m justify-content-center">MANUTENÇÃO</p>
+            <br><br><br><br>
+            <div>
+                <br><br><br><br>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-list"></span>Cursos
+                    </div>
+                    <div class="panel-body" *ngFor='let item of listaProdutos'>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="checkbox">
+                                    <label for="checkbox">
+                                        {{item.nome}}
+                                </label>
+                                </div>
+                                <div class="pull-right action-buttons">
+                                    <a [routerLink]="['/editar-produto', item.id]"><span class="glyphicon glyphicon-pencil"></span></a>
+                                    <a [routerLink]="['/delete-produto', item.id]" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container mt-5">
+        <div class="row">
+            <div>
+                <br><br>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-list"></span>Categoria
+                    </div>
+                    <div class="panel-body" *ngFor='let item of listaCategorias'>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="checkbox">
+                                    <label for="checkbox">
+                                        {{item.titulo}}
+                                </label>
+                                </div>
+                                <div class="pull-right action-buttons">
+                                    <a [routerLink]="['/editar-categoria', item.id]"><span class="glyphicon glyphicon-pencil"></span></a>
+                                    <a [routerLink]="['/delete-categoria', item.id]"  class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>

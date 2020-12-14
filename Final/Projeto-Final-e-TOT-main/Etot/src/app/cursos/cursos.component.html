@@ -1,0 +1,67 @@
+<div class="bg-cursos">
+
+    <br><br><br><br>
+    <div class="container d-flex flex-wrap justify-content-center">
+        
+        <h1 class="cor">Cursos Disponíveis</h1>
+
+        <div id="container" *ngFor='let item of listaProdutos'>
+
+            
+
+            <!-- Start	Product details -->
+            <div class="product-details">
+
+                <!-- 	Product Name -->
+                <h1>{{item.nome}}</h1>
+
+                <!-- The most important information about the product -->
+                <p class="information">{{item.descricao}}</p>
+
+
+                <!-- 		Control -->
+                <div class="control">
+
+                    <!-- Start Button buying -->
+                    <button class="btn">
+                        <!-- 		the Price -->
+                        <span class="price">${{item.preco}}</span>
+                        <!-- 		shopping cart icon-->
+                        <span class="shopping-cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                        <!-- 		Buy Now / ADD to Cart-->
+                        <span class="buy" (click)='comprar()'>Comprar</span>
+                    </button>
+                    <!-- End Button buying -->
+
+                </div>
+
+            </div>
+
+            <!-- 	End	Product details   -->
+
+            <!-- 	Start product image & Information -->
+
+            <div class="product-image">
+
+                <img src="./assets/img/logo-cursos.png">
+
+                <!-- 	product Information-->
+                <div class="info">
+                    <h2>Descrição</h2>
+                    <ul>
+                        <li><strong>Categoria: {{item.categoria.titulo}}</strong></li>
+                        <li><strong>Duração: </strong>{{item.duracao}} horas</li>
+                        <li><strong>Professor: </strong>{{item.professor}}</li>
+                        <li><strong>Nível: </strong>Intermediário</li>
+
+
+                    </ul>
+                </div>
+            </div>
+            <!--  End product image  -->
+        </div>
+
+
+
+    </div>
+</div>
